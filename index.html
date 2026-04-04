@@ -42,7 +42,7 @@
   <!-- Fonts: Display serif + Body sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -139,34 +139,43 @@
 
         <!-- Filter tabs -->
         <div class="menu-tabs reveal" role="tablist" aria-label="Κατηγορίες μενού">
-          <button class="menu-tab active" role="tab" aria-selected="true" data-filter="all">Όλα</button>
-          <button class="menu-tab" role="tab" aria-selected="false" data-filter="coffee">Καφέδες</button>
+          <button class="menu-tab active" role="tab" aria-selected="true" data-filter="coffee">Καφέδες</button>
           <button class="menu-tab" role="tab" aria-selected="false" data-filter="drinks">Ροφήματα</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="juices">Χυμοί</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="food">Φαγητό</button>
           <button class="menu-tab" role="tab" aria-selected="false" data-filter="bites">Σνακς</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="soft">Αναψυκτικά</button>
         </div>
 
         <div class="menu-grid">
 
-          <!-- COFFEE -->
+          <!-- ☕ ΚΑΦΕΔΕΣ -->
           <article class="menu-card reveal" data-category="coffee">
             <div class="menu-card__icon">☕</div>
             <h3 class="menu-card__title">Espresso</h3>
-            <p class="menu-card__desc">Haart coffee, μονός ή διπλός</p>
-            <span class="menu-card__price">€1.50 – €2.00</span>
+            <p class="menu-card__desc">Haart coffee, κλασικός</p>
+            <span class="menu-card__price">€2.30</span>
           </article>
 
           <article class="menu-card reveal" data-category="coffee">
             <div class="menu-card__icon">☕</div>
-            <h3 class="menu-card__title">Cappuccino</h3>
-            <p class="menu-card__desc">Βελούδινος αφρός, Haart coffee</p>
-            <span class="menu-card__price">€2.60</span>
+            <h3 class="menu-card__title">Espresso Americano</h3>
+            <p class="menu-card__desc">Μακρύς espresso με ζεστό νερό</p>
+            <span class="menu-card__price">€2.50</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Espresso Macchiato</h3>
+            <p class="menu-card__desc">Espresso με λίγο αφρόγαλα</p>
+            <span class="menu-card__price">€2.50</span>
           </article>
 
           <article class="menu-card reveal" data-category="coffee">
             <div class="menu-card__icon">🧊</div>
             <h3 class="menu-card__title">Freddo Espresso</h3>
             <p class="menu-card__desc">Κρύος, δυνατός, ελληνικός</p>
-            <span class="menu-card__price">€2.60</span>
+            <span class="menu-card__price">€2.50</span>
           </article>
 
           <article class="menu-card reveal" data-category="coffee">
@@ -174,6 +183,27 @@
             <h3 class="menu-card__title">Freddo Cappuccino</h3>
             <p class="menu-card__desc">Κρύος cappuccino με αφρογάλα</p>
             <span class="menu-card__price">€2.80</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">🧊</div>
+            <h3 class="menu-card__title">Freddo Latte</h3>
+            <p class="menu-card__desc">Κρύος latte, απαλός και αρωματικός</p>
+            <span class="menu-card__price">€2.80</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Cappuccino</h3>
+            <p class="menu-card__desc">Βελούδινος αφρός, Haart coffee</p>
+            <span class="menu-card__price">€2.40</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Cappuccino Latte</h3>
+            <p class="menu-card__desc">Cappuccino με extra γάλα</p>
+            <span class="menu-card__price">€2.50</span>
           </article>
 
           <article class="menu-card reveal" data-category="coffee">
@@ -190,7 +220,7 @@
             <span class="menu-card__price">€2.00</span>
           </article>
 
-          <!-- DRINKS -->
+          <!-- 🍵 ΡΟΦΗΜΑΤΑ -->
           <article class="menu-card reveal" data-category="drinks">
             <div class="menu-card__icon">🍫</div>
             <h3 class="menu-card__title">Σοκολάτα</h3>
@@ -200,52 +230,174 @@
 
           <article class="menu-card reveal" data-category="drinks">
             <div class="menu-card__icon">🍵</div>
-            <h3 class="menu-card__title">Matcha Latte</h3>
-            <p class="menu-card__desc">Αυθεντικό τσάι matcha</p>
+            <h3 class="menu-card__title">Τσάι Πράσινο</h3>
+            <p class="menu-card__desc">Κλασικό πράσινο τσάι</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Τσάι Μαύρο</h3>
+            <p class="menu-card__desc">Κλασικό μαύρο τσάι</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Τσάι Matcha</h3>
+            <p class="menu-card__desc">Αυθεντικό matcha latte</p>
             <span class="menu-card__price">€4.30</span>
           </article>
 
           <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Τσάι 4 Red Berries</h3>
+            <p class="menu-card__desc">Φρουτώδες τσάι κόκκινων μούρων</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <!-- 🍊 ΦΡΕΣΚΟΙ ΧΥΜΟΙ -->
+          <article class="menu-card reveal" data-category="juices">
             <div class="menu-card__icon">🍊</div>
             <h3 class="menu-card__title">Φυσικός Χυμός Πορτοκάλι</h3>
             <p class="menu-card__desc">Φρεσκοστυμμένος</p>
             <span class="menu-card__price">€3.50</span>
           </article>
 
-          <article class="menu-card reveal" data-category="drinks">
-            <div class="menu-card__icon">🍵</div>
-            <h3 class="menu-card__title">Τσάι</h3>
-            <p class="menu-card__desc">Πράσινο, μαύρο ή 4 Red Berries</p>
-            <span class="menu-card__price">€2.30</span>
+          <article class="menu-card reveal" data-category="juices">
+            <div class="menu-card__icon">🍹</div>
+            <h3 class="menu-card__title">Χυμός Μήλο, Αχλάδι, Πορτοκάλι</h3>
+            <p class="menu-card__desc">Φυσικός mix φρούτων</p>
+            <span class="menu-card__price">€4.00</span>
           </article>
 
-          <!-- BITES -->
-          <article class="menu-card reveal" data-category="bites">
+          <article class="menu-card reveal" data-category="juices">
+            <div class="menu-card__icon">🥝</div>
+            <h3 class="menu-card__title">Χυμός Μήλο, Ακτινίδιο</h3>
+            <p class="menu-card__desc">Φυσικός, δροσερός</p>
+            <span class="menu-card__price">€4.00</span>
+          </article>
+
+          <!-- 🥖 ΦΑΓΗΤΟ -->
+          <article class="menu-card reveal" data-category="food">
+            <div class="menu-card__icon">🥖</div>
+            <h3 class="menu-card__title">Φοκάτσια Μορταδέλα</h3>
+            <p class="menu-card__desc">Ιταλική φοκάτσια με μορταδέλα</p>
+            <span class="menu-card__price">€4.60</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="food">
+            <div class="menu-card__icon">🥖</div>
+            <h3 class="menu-card__title">Φοκάτσια Καπνιστή Γαλοπούλα</h3>
+            <p class="menu-card__desc">Φοκάτσια με καπνιστή γαλοπούλα</p>
+            <span class="menu-card__price">€4.40</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="food">
             <div class="menu-card__icon">🥐</div>
             <h3 class="menu-card__title">Μπαγκετίνι Γαλοπούλα</h3>
+            <p class="menu-card__desc">Με γκούντα & μαγιονέζα</p>
+            <span class="menu-card__price">€3.00</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="food">
+            <div class="menu-card__icon">🥐</div>
+            <h3 class="menu-card__title">Μπαγκετίνι Γαλοπούλα Ντομάτα</h3>
             <p class="menu-card__desc">Με γκούντα, ντομάτα & μαγιονέζα</p>
             <span class="menu-card__price">€3.30</span>
           </article>
 
+          <article class="menu-card reveal" data-category="food">
+            <div class="menu-card__icon">🥪</div>
+            <h3 class="menu-card__title">Τόστ</h3>
+            <p class="menu-card__desc">Κλασικό, ζεστό, τραγανό</p>
+            <span class="menu-card__price">€3.00</span>
+          </article>
+
+          <!-- 🍪 ΣΝΑΚΣ -->
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🥯</div>
+            <h3 class="menu-card__title">Κουλούρι Θεσσαλονίκης</h3>
+            <p class="menu-card__desc">Κλασικό, τραγανό</p>
+            <span class="menu-card__price">€0.50</span>
+          </article>
+
           <article class="menu-card reveal" data-category="bites">
             <div class="menu-card__icon">🧁</div>
-            <h3 class="menu-card__title">Muffin</h3>
-            <p class="menu-card__desc">Μήλο-κανέλα ή σοκολάτα</p>
+            <h3 class="menu-card__title">Muffin Μήλο & Κανέλα</h3>
+            <p class="menu-card__desc">Σπιτικό, αρωματικό</p>
+            <span class="menu-card__price">€2.80</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🧁</div>
+            <h3 class="menu-card__title">Muffin Σοκολάτα</h3>
+            <p class="menu-card__desc">Σπιτικό, σοκολατένιο</p>
             <span class="menu-card__price">€2.80</span>
           </article>
 
           <article class="menu-card reveal" data-category="bites">
             <div class="menu-card__icon">🍪</div>
-            <h3 class="menu-card__title">Cookies</h3>
-            <p class="menu-card__desc">Βανίλια & σοκολάτα</p>
+            <h3 class="menu-card__title">Cookies Βανίλια & Σοκολάτα</h3>
+            <p class="menu-card__desc">Τραγανά, χειροποίητα</p>
             <span class="menu-card__price">€2.50</span>
           </article>
 
           <article class="menu-card reveal" data-category="bites">
-            <div class="menu-card__icon">🥪</div>
-            <h3 class="menu-card__title">Τόστ</h3>
-            <p class="menu-card__desc">Κλασικό, ζεστό, τραγανό</p>
-            <span class="menu-card__price">€3.00</span>
+            <div class="menu-card__icon">🍰</div>
+            <h3 class="menu-card__title">Κέικ</h3>
+            <p class="menu-card__desc">Σπιτικό κέικ ημέρας</p>
+            <span class="menu-card__price">€1.70</span>
+          </article>
+
+          <!-- 🥤 ΑΝΑΨΥΚΤΙΚΑ -->
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">💧</div>
+            <h3 class="menu-card__title">Νερό</h3>
+            <p class="menu-card__desc">Εμφιαλωμένο</p>
+            <span class="menu-card__price">€0.50</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">🥤</div>
+            <h3 class="menu-card__title">Coca-Cola</h3>
+            <p class="menu-card__desc">Classic, Zero ή Light · 0.33l</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">🥤</div>
+            <h3 class="menu-card__title">Fanta</h3>
+            <p class="menu-card__desc">Κόκκινη, Μπλε ή Λεμόνι · 0.33l</p>
+            <span class="menu-card__price">€2.20</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Fuze Tea</h3>
+            <p class="menu-card__desc">Ροδάκινο ή Λεμόνι</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">🍋</div>
+            <h3 class="menu-card__title">Schweppes Grapefruit</h3>
+            <p class="menu-card__desc">Αναψυκτικό γκρέιπφρουτ</p>
+            <span class="menu-card__price">€2.40</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">⚡</div>
+            <h3 class="menu-card__title">Monster Energy</h3>
+            <p class="menu-card__desc">Πράσινο, Μπλε ή Άσπρο</p>
+            <span class="menu-card__price">€3.20</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="soft">
+            <div class="menu-card__icon">🍊</div>
+            <h3 class="menu-card__title">Amita</h3>
+            <p class="menu-card__desc">Πορτοκάλι-Βερίκοκο-Μήλο ή Motion</p>
+            <span class="menu-card__price">€2.30</span>
           </article>
 
         </div>

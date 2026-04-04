@@ -102,31 +102,36 @@
   }
 
   // ─── MENU FILTER TABS ────────────────────
+  function filterMenu(filter) {
+    menuCards.forEach(card => {
+      if (card.dataset.category === filter) {
+        card.classList.remove('hidden');
+        card.classList.remove('visible');
+        void card.offsetWidth;
+        card.classList.add('visible');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
   menuTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Update active state
       menuTabs.forEach(t => {
         t.classList.remove('active');
         t.setAttribute('aria-selected', 'false');
       });
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
-
-      const filter = tab.dataset.filter;
-
-      menuCards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.classList.remove('hidden');
-          // Re-trigger reveal
-          card.classList.remove('visible');
-          void card.offsetWidth; // force reflow
-          card.classList.add('visible');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
+      filterMenu(tab.dataset.filter);
     });
   });
+
+  // Initial filter based on active tab
+  const activeTab = document.querySelector('.menu-tab.active');
+  if (activeTab) {
+    filterMenu(activeTab.dataset.filter);
+  }
 
   // ─── SMOOTH SCROLL FOR ANCHOR LINKS ──────
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
