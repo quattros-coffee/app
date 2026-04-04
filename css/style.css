@@ -917,18 +917,34 @@ address {
 .site-footer__social {
   display: flex;
   justify-content: center;
-  gap: var(--space-sm);
+  align-items: center;
+  gap: var(--space-md);
   margin-bottom: var(--space-md);
 }
 
 .site-footer__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: rgba(250,248,245,0.5);
-  transition: color var(--duration);
+  transition: color var(--duration), opacity var(--duration);
   padding: 8px;
 }
 
 .site-footer__social a:hover {
   color: var(--color-white);
+}
+
+.footer-brand-icon {
+  height: 20px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity var(--duration);
+}
+
+.site-footer__social a:hover .footer-brand-icon {
+  opacity: 1;
 }
 
 .site-footer__copy {
