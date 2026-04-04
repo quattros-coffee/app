@@ -952,6 +952,28 @@ address {
   opacity: 0.5;
 }
 
+.site-footer__powered {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: var(--text-xs);
+  opacity: 0.35;
+  margin-top: var(--space-sm);
+  transition: opacity var(--duration);
+}
+
+.site-footer__powered:hover {
+  opacity: 0.7;
+}
+
+.nxo-logo {
+  height: 16px;
+  width: auto;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
 /* ═══════════════════════════════════════════
    BACK TO TOP
    ═══════════════════════════════════════════ */
