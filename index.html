@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quattros Coffee — Specialty coffee στην καρδιά του Παγκρατίου. Φιλολάου 63, Αθήνα.">
+  <meta name="theme-color" content="#FAF8F5">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Quattros Coffee — Specialty Coffee in Pagrati">
+  <meta property="og:description" content="Κάθε φλιτζάνι, μια τελετουργία. Specialty coffee στην καρδιά του Παγκρατίου.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="el_GR">
+
+  <title>Quattros Coffee — Pagrati, Athens</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Fonts: Display serif + Body sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Skip to content -->
+  <a href="#main-content" class="skip-link">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav" aria-label="Κύρια πλοήγηση">
+      <a href="#hero" class="nav__logo" aria-label="Quattros Coffee — Αρχική">
+        <span class="nav__logo-text">Quattros</span>
+        <span class="nav__logo-sub">Coffee</span>
+      </a>
+
+      <button class="nav__toggle" aria-label="Μενού" aria-expanded="false" aria-controls="nav-menu">
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+        <span class="nav__toggle-line"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about" class="nav__link">Η Ιστορία μας</a></li>
+        <li><a href="#menu" class="nav__link">Μενού</a></li>
+        <li><a href="#gallery" class="nav__link">Ατμόσφαιρα</a></li>
+        <li><a href="#find-us" class="nav__link">Βρείτε μας</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-main">Quattros</span>
+        <span class="hero__title-sub">Coffee</span>
+      </h1>
+      <p class="hero__tagline" lang="el">Specialty coffee στην καρδιά του Παγκρατίου</p>
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT
+    ═══════════════════════════════════════════ -->
+    <section class="section section-about" id="about">
+      <div class="container section-about__grid">
+        <div class="section-about__text reveal">
+          <span class="section-label">Η ιστορία μας</span>
+          <h2 class="section-heading">Κάθε φλιτζάνι,<br>μια τελετουργία.</h2>
+          <p class="section-about__body">
+            Γεννημένο από την αγάπη για τον τέλειο καφέ, το Quattros είναι εκεί όπου ο specialty καφές
+            συναντά την αθηναϊκή ζεστασιά. Κάθε κόκκος είναι προσεκτικά επιλεγμένος από την
+            <strong>Haart Coffee</strong>, κάθε φλιτζάνι είναι μια εμπειρία.
+          </p>
+          <p class="section-about__body">
+            Στη Φιλολάου 63, στο Παγκράτι, σε περιμένει ένας χώρος φτιαγμένος
+            για να απολαύσεις τον καφέ σου με ηρεμία — ακριβώς όπως πρέπει.
+          </p>
+        </div>
+        <div class="section-about__image-wrap reveal">
+          <div class="section-about__image">
+            <img
+
+              src="images/coffee.jpeg"
+              alt="Ατμοσφαιρική φωτογραφία καφέ σε ζεστό φως"
+              loading="lazy"
+              width="800" height="1000"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         MENU HIGHLIGHTS
+    ═══════════════════════════════════════════ -->
+    <section class="section section-menu" id="menu">
+      <div class="container">
+        <h2 class="section-heading reveal">Επιλογές μενού</h2>
+
+        <!-- Filter tabs -->
+        <div class="menu-tabs reveal" role="tablist" aria-label="Κατηγορίες μενού">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-filter="all">Όλα</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="coffee">Καφέδες</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="drinks">Ροφήματα</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="bites">Σνακς</button>
+        </div>
+
+        <div class="menu-grid">
+
+          <!-- COFFEE -->
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Espresso</h3>
+            <p class="menu-card__desc">Haart coffee, μονός ή διπλός</p>
+            <span class="menu-card__price">€1.50 – €2.00</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Cappuccino</h3>
+            <p class="menu-card__desc">Βελούδινος αφρός, Haart coffee</p>
+            <span class="menu-card__price">€2.60</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">🧊</div>
+            <h3 class="menu-card__title">Freddo Espresso</h3>
+            <p class="menu-card__desc">Κρύος, δυνατός, ελληνικός</p>
+            <span class="menu-card__price">€2.60</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">🧊</div>
+            <h3 class="menu-card__title">Freddo Cappuccino</h3>
+            <p class="menu-card__desc">Κρύος cappuccino με αφρογάλα</p>
+            <span class="menu-card__price">€2.80</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Flat White</h3>
+            <p class="menu-card__desc">Haart coffee, ατμισμένο γάλα</p>
+            <span class="menu-card__price">€2.60</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="coffee">
+            <div class="menu-card__icon">☕</div>
+            <h3 class="menu-card__title">Ελληνικός</h3>
+            <p class="menu-card__desc">Παραδοσιακός, στο μπρίκι</p>
+            <span class="menu-card__price">€2.00</span>
+          </article>
+
+          <!-- DRINKS -->
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍫</div>
+            <h3 class="menu-card__title">Σοκολάτα</h3>
+            <p class="menu-card__desc">Ζεστή ή κρύα</p>
+            <span class="menu-card__price">€3.50</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Matcha Latte</h3>
+            <p class="menu-card__desc">Αυθεντικό τσάι matcha</p>
+            <span class="menu-card__price">€4.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍊</div>
+            <h3 class="menu-card__title">Φυσικός Χυμός Πορτοκάλι</h3>
+            <p class="menu-card__desc">Φρεσκοστυμμένος</p>
+            <span class="menu-card__price">€3.50</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="drinks">
+            <div class="menu-card__icon">🍵</div>
+            <h3 class="menu-card__title">Τσάι</h3>
+            <p class="menu-card__desc">Πράσινο, μαύρο ή 4 Red Berries</p>
+            <span class="menu-card__price">€2.30</span>
+          </article>
+
+          <!-- BITES -->
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🥐</div>
+            <h3 class="menu-card__title">Μπαγκετίνι Γαλοπούλα</h3>
+            <p class="menu-card__desc">Με γκούντα, ντομάτα & μαγιονέζα</p>
+            <span class="menu-card__price">€3.30</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🧁</div>
+            <h3 class="menu-card__title">Muffin</h3>
+            <p class="menu-card__desc">Μήλο-κανέλα ή σοκολάτα</p>
+            <span class="menu-card__price">€2.80</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🍪</div>
+            <h3 class="menu-card__title">Cookies</h3>
+            <p class="menu-card__desc">Βανίλια & σοκολάτα</p>
+            <span class="menu-card__price">€2.50</span>
+          </article>
+
+          <article class="menu-card reveal" data-category="bites">
+            <div class="menu-card__icon">🥪</div>
+            <h3 class="menu-card__title">Τόστ</h3>
+            <p class="menu-card__desc">Κλασικό, ζεστό, τραγανό</p>
+            <span class="menu-card__price">€3.00</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         GALLERY
+    ═══════════════════════════════════════════ -->
+    <section class="section section-gallery" id="gallery">
+      <div class="container">
+        <span class="section-label reveal">Ατμόσφαιρα</span>
+        <h2 class="section-heading reveal">Στιγμές από το Quattros</h2>
+      </div>
+      <div class="gallery-strip">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600&q=80&auto=format"
+            alt="Latte art σε φλιτζάνι cappuccino"
+            loading="lazy" width="600" height="400"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80&auto=format"
+            alt="Κόκκοι καφέ κοντινό πλάνο"
+            loading="lazy" width="600" height="400"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&q=80&auto=format"
+            alt="Εσωτερικός χώρος καφετέριας με ζεστό φωτισμό"
+            loading="lazy" width="600" height="400"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=600&q=80&auto=format"
+            alt="Barista ετοιμάζει espresso"
+            loading="lazy" width="600" height="400"
+          >
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=80&auto=format"
+            alt="Φλιτζάνι καφέ σε ξύλινο τραπέζι"
+            loading="lazy" width="600" height="400"
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         FIND US
+    ═══════════════════════════════════════════ -->
+    <section class="section section-find" id="find-us">
+      <div class="container section-find__grid">
+
+        <div class="section-find__info reveal">
+          <span class="section-label">Βρείτε μας</span>
+          <h2 class="section-heading">Σας περιμένουμε.</h2>
+
+          <address class="find-address">
+            <div class="find-detail">
+              <svg class="find-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <p>Φιλολάου 63, Παγκράτι</p>
+                <p>11633 Αθήνα</p>
+              </div>
+            </div>
+
+            <div class="find-detail">
+              <svg class="find-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+302107514953" class="find-phone">210 751 4953</a>
+            </div>
+          </address>
+
+          <div class="find-hours">
+            <h3 class="find-hours__title">Ωράριο</h3>
+            <dl class="find-hours__list">
+              <div class="find-hours__row">
+                <dt>Δευτέρα</dt>
+                <dd>07:00 – 16:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Τρίτη</dt>
+                <dd>07:00 – 19:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Τετάρτη</dt>
+                <dd>07:00 – 16:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Πέμπτη</dt>
+                <dd>07:00 – 19:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Παρασκευή</dt>
+                <dd>07:00 – 19:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Σάββατο</dt>
+                <dd>08:00 – 16:00</dd>
+              </div>
+              <div class="find-hours__row">
+                <dt>Κυριακή</dt>
+                <dd>Κλειστά</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="find-actions">
+            <a href="https://wolt.com/en/grc/athens/restaurant/quattros-coffee-filol" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Παράγγειλε στο Wolt
+            </a>
+            <a href="https://www.e-food.gr/delivery/pagrati/quattros-coffee-8764377" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+              Παράγγειλε στο e-food
+            </a>
+          </div>
+        </div>
+
+        <div class="section-find__map reveal">
+          <iframe
+            title="Χάρτης τοποθεσίας Quattros Coffee"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.5!2d23.7495608!3d37.96498341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU3JzUzLjkiTiAyM8KwNDQnNTguNCJF!5e0!3m2!1sel!2sgr!4v1700000000000"
+            width="600" height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         CONNECT / SOCIAL
+    ═══════════════════════════════════════════ -->
+    <section class="section section-connect">
+      <div class="container section-connect__inner reveal">
+        <span class="section-label">Ακολουθήστε μας</span>
+        <h2 class="section-heading">Δείτε τον κόσμο μας<br>στο Instagram</h2>
+        <a href="https://www.instagram.com/quattros_coffee" target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+          @quattros_coffee
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="nav__logo-text">Quattros</span>
+        <span class="nav__logo-sub">Coffee</span>
+      </div>
+      <p class="site-footer__address">Φιλολάου 63, Παγκράτι · 11633 Αθήνα · <a href="tel:+302107514953">210 751 4953</a></p>
+      <div class="site-footer__social">
+        <a href="https://www.instagram.com/quattros_coffee" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+      </div>
+      <p class="site-footer__copy">© 2025 Quattros Coffee · Made with ♥ in Athens</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" aria-label="Επιστροφή στην κορυφή" id="back-to-top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
