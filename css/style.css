@@ -782,8 +782,17 @@ address {
 
 .find-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
+  flex-wrap: nowrap;
+  gap: var(--space-xs);
+}
+
+.find-actions .btn {
+  flex: 1;
+  justify-content: center;
+  padding: 12px 16px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: var(--text-xs);
 }
 
 /* Map */
@@ -944,6 +953,15 @@ address {
   opacity: 1;
 }
 
+.footer-box-link svg {
+  opacity: 0.8;
+  transition: opacity var(--duration);
+}
+
+.footer-box-link:hover svg {
+  opacity: 1;
+}
+
 .site-footer__copy {
   font-size: var(--text-xs);
   opacity: 0.5;
@@ -1097,12 +1115,14 @@ address {
   /* Find us - full width buttons stacked */
   .find-actions {
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .find-actions .btn {
     width: 100%;
     justify-content: center;
     padding: 16px 24px;
+    font-size: var(--text-sm);
   }
 
   /* Map - taller on mobile for better visibility */
