@@ -953,7 +953,7 @@ address {
 }
 
 .site-footer__powered {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
@@ -968,10 +968,13 @@ address {
 }
 
 .nxo-logo {
-  height: 16px;
-  width: auto;
+  height: 14px !important;
+  max-height: 14px !important;
+  width: auto !important;
+  max-width: 40px;
   object-fit: contain;
   vertical-align: middle;
+  display: inline-block;
 }
 
 /* ═══════════════════════════════════════════
